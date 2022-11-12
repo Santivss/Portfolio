@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+
+:root {
+    --violet-color: #8E7BEF;
+    --black-color: #222222;
+    --yellow-color: #FCDA68;
+    --gray-color: #423F40;
+    --white-color: #FFFFFF;
+    --white-color: #F9F5F2;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: var(--black-color);
+}
+
+p {
+    color: var(--gray-color);
+}
+
+/* GRID Principal */
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 5% 90% 5%;
+    grid-template-rows: 0.5fr repeat(6,1fr);
+}
+
+.title__container {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+.image__container {
+    background-color: lightcyan;
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+.skills__container {
+    background-color:lightgoldenrodyellow;
+    grid-column: 2/3;
+    grid-row: 4/5
+}
+.portafolio__container {
+    background-color: lightgray;
+    grid-column: 2/3;
+    grid-row: 5/6;
+}
+.contacto__container {
+    background-color: lightgreen;
+    grid-column: 2/3;
+    grid-row: 6/7;
+}
+
+/* INICIO menu__container */
+
+.home {
+    color: var(--violet-color);
+    margin-top: 5px;
+}
+
+.menu__others {
+    display: flex;
+    flex-direction: column;
+    gap: 0.9rem;
+    background-color: var(--white-color);
+    transform: translateY(-100%);
+    transition: 0.7s ease;
+}
+
+.menu__others-show {
+    transform: translateY(0);
+}
+
+.burger__menu {
+    position: absolute;
+    width: 25px;
+    top: 15px;
+    right: 15px;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.test{
+    height: 100px;
+}
+
+.menu__container {
+    text-align: center;
+    width: 100%;
+    height: 150px;
+    /* display: none; */
+    position: absolute;
+}
+
+/* INICIO title__container */
+
+.title__container {
+    margin-top: 60px;
+    height: 100%;
+    display: grid;
+    grid-template-rows: repeat(2,70px) 50px repeat(2,70px);
+}
+
+.title_principal {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.title_paragraph {
+    margin: auto;
+}
+
+.title_years {
+    height: 100%;
+    font-size: 18px;
+    height: 50px;
+    margin: 0 auto;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.years {
+    margin-right: 5px;
+    color: var(--violet-color);
+}
+
+.experience {
+    color: var(--gray-color);
+}
+
+.title_years {
+    margin: auto;
+}
+
+.icons {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.icons__image {
+    background-color: var(--violet-color);
+    width: 40px;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+/* INICIO image__container */
+
+
+
