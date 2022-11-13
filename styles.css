@@ -48,6 +48,8 @@ p {
 
 /* GRID Principal */
 .container {
+    margin: 0 auto;
+    max-width: 1400px;
     height: 100vh;
     display: grid;
     grid-template-columns: 5% 90% 5%;
@@ -81,6 +83,7 @@ p {
 }
 
 .menu__others {
+    width: 100vw;
     display: flex;
     flex-direction: column;
     gap: 0.9rem;
@@ -145,6 +148,7 @@ p {
 
 
 .years {
+    margin-right: 5px;
     color: var(--violet-color);
 }
 
