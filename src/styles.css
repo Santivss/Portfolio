@@ -28,6 +28,12 @@ body {
 a {
     text-decoration: none;
     color: var(--black-color);
+    transition: 0.3s;
+}
+
+a:hover {
+    transition: 0.3s;
+    font-size: 120%;
 }
 
 p {
@@ -137,6 +143,7 @@ p {
     justify-content: center;
 }
 
+
 .years {
     color: var(--violet-color);
 }
@@ -165,7 +172,13 @@ p {
     padding: 10px;
 }
 
+.button:hover {
+    transition: 0.3s;
+    background-color: #6759ad;
+} 
+
 .button {
+    transition: 0.3s;
     border: none;
     display: flex;
     justify-content: center;
@@ -232,12 +245,14 @@ p {
 
 .skills_icon {
     width: 60px;
-    margin: 15px auto;5
+    margin: 15px auto;
 }
 
 .experience {
     display: grid;
     grid-template-rows: auto;
+    margin: 0;
+    margin-left: 5px;
 }
 
 .experience_title {
@@ -353,6 +368,7 @@ p {
     margin: 40px auto;
     color: var(--violet-color);
     grid-column: 1/3;
+    transition: 0.7s;
 }
 
 .link_contact:hover {
@@ -374,3 +390,197 @@ p {
 }
 
 /*  */
+
+@media screen and (min-width: 768px) {
+    .burger__menu {
+        display: none;
+    }
+    .container {
+        height: 100vh;
+        grid-template-columns: 5% 90% 5%;
+        grid-template-rows: 70px repeat(6,1fr);
+    }
+
+    .home {
+        margin: 0;
+    }
+    .menu__others {
+        transform: translateY(0);
+        width: 600px;
+        margin-top: 25px;
+        margin-right: 25px;
+        margin-left: auto;
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        justify-content: space-around;
+    }
+
+    .title__container {
+        width: 100%;
+        margin-top: 0;
+        grid-column: 2/3;
+        grid-row: 2/3;
+        grid-template-rows: 140px 40px 40px 100px 50px 50px;
+        grid-template-columns: 60% 40%;
+    }
+    .title_principal {
+        text-align: left;
+        font-size: 50px;
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    
+    .title_paragraph {
+        margin-top: 10px;
+        margin-left: 0;
+        grid-column: 1/2;
+        grid-row: 2/3;
+        width: 100%;
+    }
+
+    .title_years {
+        grid-column: 1/2;
+        grid-row: 3/4;
+        margin: 10px 0;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    
+    .image__container {
+        max-width: 521px;
+        height: 100%;
+        grid-column: 2/3;
+        grid-row: 1/6;
+        content: url(../imagenes/photodesktop.png);
+    }
+
+    .image__photo {
+        height: 100%;
+        width: 100%;
+    }
+
+    .icons__image {
+        width: 35px;
+        margin-right: 30px;
+    }
+
+    .icons {
+        justify-content: left;
+        width: 50%;
+        margin: 0;
+        grid-row: 4/5;
+    }
+
+    .button {
+        margin-left: 0;
+        margin-bottom: 0;
+        grid-row: 5/6;
+        width: 55%;
+        height: 35px;
+    }
+
+    .skills__container {
+        height: 100%;
+        margin: 0;
+        display: grid;
+        grid-template-columns: 10% 40% 40% 10%;
+        grid-template-rows: 30px 100px 110px 30px 200px;
+    }
+
+    .skills__title {
+        margin: 0;
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+    
+    .skills__paragraph {
+        margin: 0;
+        grid-column: 2/3;
+        grid-row: 3/4;
+    }
+    
+    .experience {
+        margin: 0;
+        grid-column: 3/4;
+        grid-row: 2/4;
+    }
+
+    .skills {
+        height: 100%;
+        margin: 0;
+        grid-row: 5/6;
+        grid-column: 2/4;
+        display: grid;
+        grid-template-rows: 40px 100px;
+        grid-template-columns: 20% 80%;
+    }
+
+    .skills__items {
+        grid-column: 2/3;
+        grid-row: 2/3;
+        display: grid; 
+        width: 650px;
+    }
+    
+    .skills_icon {
+        width: 40px;
+    }
+    
+    .skill_text {
+        grid-row: 2/3;
+    }
+
+    .portafolio__container {
+        margin: 0;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: 100px 300px;
+    }
+
+    .portafolio__title {
+        margin-top: 40px;
+        grid-row: 1/2;
+        grid-column: 1/2;
+    }
+
+    .image1,.image2,.image3 {
+        padding: 15px;
+        border-radius: 5px;
+    }
+
+    .image1{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
+    .image2 {
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+
+    .image3 {
+        grid-column: 3/4;
+        grid-row: 2/3;
+    }
+
+    .contacto__title {
+        margin: 0;
+    }
+
+    .contact__icon {
+        border-radius: 25%;
+    }
+
+    .contacto__container {
+        margin-top: 40px;
+    }
+
+    .left {
+        margin-left: 250px;
+    }
+    
+}
+
+
+
+
